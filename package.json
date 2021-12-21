@@ -1,0 +1,34 @@
+{
+  "name": "laboratorio-patito",
+  "version": "1.0.0",
+  "description": "Laboratorio Patitio w/ NOdejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./api/index.js",
+    "dev": "nodemon ./api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElMalRod/Laboratorio-Patito.git"
+  },
+  "keywords": [
+    "laboratorio",
+    "patito",
+    "node",
+    "html",
+    "js",
+    "css"
+  ],
+  "author": "Los Ingeniebrios Inc <losingeniebrios.dev@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ElMalRod/Laboratorio-Patito/issues"
+  },
+  "homepage": "https://github.com/ElMalRod/Laboratorio-Patito#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
