@@ -15,7 +15,7 @@ app.use(express.static('views'));
 app.use('/css', express.static(__dirname+'views/css'));
 app.use('/js', express.static(__dirname+'views/js'));
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) => {s
 
     res.send('hello from simple server :)')
 
