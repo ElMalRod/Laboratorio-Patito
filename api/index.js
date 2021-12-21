@@ -12,19 +12,20 @@ const port = process.env.PORT || 5000
 
 
 app.use(express.static('views'));
-app.use('/css', express.static(__dirname+'views/css'));
-app.use('/js', express.static(__dirname+'views/js'));
+app.use('/css', express.static(__dirname + 'views/css'));
+app.use('/js', express.static(__dirname + 'views/js'));
 
-app.get('/', (req, res) => {s
-
-    res.send('hello from simple server :)')
-
-});
-
-app.get('/laboratorio', (req, res) => {
+app.get('/', (req, res) => {
 
     console.log(path.join(__dirname, '../views/index.html'));
     res.status(201).sendFile(path.join(__dirname, '../views/index.html'));
+
+});
+
+app.get('/formulario', (req, res) => {
+
+    console.log(path.join(__dirname, '../views/Formulario.html'));
+    res.status(201).sendFile(path.join(__dirname, '../views/Formulario.html'));
 
 });
 
