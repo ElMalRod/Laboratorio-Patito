@@ -17,15 +17,22 @@ app.use('/js', express.static(__dirname + 'views/js'));
 
 app.get('/', (req, res) => {
 
-    console.log(path.join(__dirname, '../views/index.html'));
+    console.log("Reubicados en: "+path.join(__dirname, '../views/index.html'));
     res.status(201).sendFile(path.join(__dirname, '../views/index.html'));
 
 });
 
 app.get('/formulario', (req, res) => {
 
-    console.log(path.join(__dirname, '../views/Formulario.html'));
+    console.log("Reubicados en: "+path.join(__dirname, '../views/Formulario.html'));
     res.status(201).sendFile(path.join(__dirname, '../views/Formulario.html'));
+
+});
+
+app.get('/login', (req, res) => {
+
+    console.log("Reubicados en: "+path.join(__dirname, '../views/Login.html'));
+    res.status(201).sendFile(path.join(__dirname, '../views/Login.html'));
 
 });
 
