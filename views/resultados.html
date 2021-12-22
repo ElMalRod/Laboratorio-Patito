@@ -38,10 +38,10 @@
                                     <a class="nav-link tm-nav-link" href="secretario.html">Inicio</a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="nav-link tm-nav-link" href="Formulario.html">Asignar Examen <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link tm-nav-link" href="resultados.html">Asignar Resultados <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="Calendario.html">Consultar Examenes </a>
+                                    <a class="nav-link tm-nav-link" href="Calendario.html">Consultar Agenda </a>
                                 </li>                            
                             </ul>                            
                         </div>                        
@@ -53,10 +53,13 @@
               <div class="tm-col-left"></div>
                 <main class="tm-col-right">
                     <section class="tm-content tm-about">
-                        <h2 class="mb-5 tm-content-title">Asignacion de Examen</h2>
+                        <h2 class="mb-5 tm-content-title">Asignacion de Resultado </h2>
                         <hr class="mb-4">
                         <div class="media my-3">
                             <form id="citas" action="" method="POST">
+                                <div class="form-group mb-4">
+                                    <h3 class="form-control">Ingrese datos del cliente</h3>
+                                </div>
                                 <div class="form-group mb-4">
                                     <input type="text" name="CUI" class="form-control"  placeholder="CUI" required="" />
                                 </div>
@@ -74,10 +77,10 @@
                                 </div>
                                 <div class="form-group mb-4">
                                     <h3 class="form-control">Sexo</h3>
-                               <select name="examen" class="form-control"   size="1"  >  
-                                   <option value="male1" > Hombre </option>  
-                                   <option value="male2"> Mujer</option>
-                                </select>  
+                                    <select name="examen" class="form-control"   size="1"  >  
+                                        <option value="male1" > Hombre </option>  
+                                        <option value="male2"> Mujer</option>
+                                    </select>  
                                  </div>
                                 <div class="form-group mb-4">
                                      <h3 class="form-control">Tipo de Examen</h3>
@@ -87,17 +90,14 @@
                                     <option value="prueba3" > Heces por parásito</option>  
                                     <option value="prueba4" > Examen Completo</option>          
                                 </select>  
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="form-control">Fecha de emision</h3>
-                                    <input type="date" name="fecha" />
+                               <div class="form-group mb-4" name="Hematologia">
+                                <h2 class="form-control">- - - - -Hematologia- - - - -</h2>
+                                <table class="form-group mb-4" id="tabla_resultado">
+
+                                 </table>
+                               </div>
                                     <br>
-                                    <br>
-                                    <div class="form-group mb-4">
-                                        <input type="number" name="Precio" class="form-control"  placeholder="Precio de consulta" required="" />
-                                    </div>
-                                    <br>
-                                    <button type="submit" class="btn btn-outline-info" name="info_consulta">Emitir Examen</button>
+                                    <button type="submit" class="btn btn-outline-info" name="info_consulta">Descargar </button>
                             </form>
                                
                                    
