@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laboratorio Patito - Formulario Page</title>
+    <title>Laboratorio Patito - Registro Cliente</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
@@ -53,13 +53,19 @@
               <div class="tm-col-left"></div>
                 <main class="tm-col-right">
                     <section class="tm-content tm-about">
-                        <h2 class="mb-5 tm-content-title">Asignacion de Examen</h2>
+                        <h2 class="mb-5 tm-content-title">Ingresar Nuevo Cliente</h2>
                         <hr class="mb-4">
                         <div class="media my-3">
                             <form id="citas" action="" method="POST">
                                 <div class="form-group mb-4">
-                                    <input type="text" name="CUI" class="form-control"  placeholder="CUI" required="" />
-                                </div>
+                                    <h3 class="form-control">Codigo</h3>
+                               <select name="codigo" class="form-control"   size="1"  >  
+                                   <option value="cod2" > Secretario </option>  
+                                   <option value="cod3"> Laboratorista </option>
+                                   <option value="cod1" > Administrador </option>  
+                                   <option value="cod4"> Otro </option>
+                                </select>  
+                                 </div>
                                 <div class="form-group mb-4">
                                     <input type="text" name="nombre" class="form-control"  placeholder="Nombre" required="" />
                                 </div>
@@ -67,41 +73,20 @@
                                     <input type="text" name="apellido" class="form-control"  placeholder="Apellido" required="" />
                                 </div>
                                 <div class="form-group mb-4">
-                                    <input type="text" name="departamento" class="form-control"  placeholder="Departamento" required="" />
+                                    <input type="text" name="dpi" class="form-control"  placeholder="DPI" required="" />
                                 </div>
                                 <div class="form-group mb-4">
-                                    <input type="text" name="tipo_sangre" class="form-control"  placeholder="Tipo de Sangre" required="" />
+                                    <input type="text" name="telefono" class="form-control"  placeholder="Telefono" required="" />
                                 </div>
+                                    <br>
+                                    <br>
                                 <div class="form-group mb-4">
-                                    <h3 class="form-control">Sexo</h3>
-                               <select name="sexo" class="form-control"   size="1"  >  
-                                   <option value="male1" > Hombre </option>  
-                                   <option value="male2"> Mujer</option>
-                                </select>  
-                                 </div>
-                                <div class="form-group mb-4">
-                                     <h3 class="form-control">Tipo de Examen</h3>
-                                <select name="examen" class="form-control"   size="1"  >  
-                                    <option value="prueba1" > Hemograma completo</option>  
-                                    <option value="prueba2"> Urinálisis completo</option>  
-                                    <option value="prueba3" > Heces por parásito</option>  
-                                    <option value="prueba4" > Examen Completo</option>          
-                                </select>  
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="form-control">Fecha de emision</h3>
-                                    <input type="date" name="fecha" />
+                                     <input type="password" id="password" class="form-control"  placeholder="Contraseña" required="" />
+                                </div>     
                                     <br>
-                                    <br>
-                                    <div class="form-group mb-4">
-                                        <input type="number" name="Precio" class="form-control"  placeholder="Precio de consulta" required="" />
-                                    </div>
-                                    <br>
-                                    <button type="submit" class="btn btn-outline-info" name="info_consulta">Emitir Examen</button>
+                                    <button type="submit" class="btn btn-outline-info" name="info_consulta">Crear</button>
                             </form>
-                               
-                                   
-                                    
+                                  
                                 </div>
                             </form>
                         </div>                        
