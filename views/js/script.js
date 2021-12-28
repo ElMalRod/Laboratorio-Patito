@@ -8,7 +8,7 @@ function iniciar() {
     form.addEventListener('submit', e => {
         if (document.formulario__login.usuario.value == a && document.formulario__login.password.value == b) {
             console.log('HOLA')
-            window.location.href= 'index.html';
+            window.location.href= 'admin.html';
         }
         if (document.formulario__login.usuario.value == c && document.formulario__login.password.value == b) {
             console.log('HOLA')
