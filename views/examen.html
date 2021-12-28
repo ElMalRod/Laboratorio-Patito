@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laboratorio Patito</title>
+    <title>Laboratorio Patito - Crear Tipo Examen</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
-    <link href="/fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
-    <link href="/css/templatemo-diagoona.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
 
 </head>
 
@@ -19,8 +19,9 @@
             <div class="tm-row pt-4">
                 <div class="tm-col-left">
                     <div class="tm-site-header media">
-                        <img src="img/LogoLabPatito.png" alt="Image" class="tm-service-img" width="300">
+                    
                         <div class="media-body">
+                            <img src="img/LogoLabPatito.png" alt="Image" class="tm-service-img" width="300">
                         </div>        
                     </div>
                 </div>
@@ -34,20 +35,14 @@
                         <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                             <ul class="navbar-nav text-uppercase">
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="registro.html">Crear Empleado</a>
-                                </li>                   
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="calendario.html">Consultar Examenes</a>
+                                    <a class="nav-link tm-nav-link" href="secretario.html">Inicio</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link tm-nav-link" href="formulario.html">Asignar Examen <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="examen.html">Crear Tipo de Examen</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="services.html">Usuarios</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="login.html">Cerrar Sesion</a>
-                                </li>
+                                    <a class="nav-link tm-nav-link" href="calendario.html">Consultar Examenes </a>
+                                </li>                            
                             </ul>                            
                         </div>                        
                     </nav>
@@ -55,12 +50,25 @@
             </div>
             
             <div class="tm-row">
-                <div class="tm-col-left"></div>
+              <div class="tm-col-left"></div>
                 <main class="tm-col-right">
-                    <section class="tm-content">
-                        <h2 class="mb-5 tm-content-title">Bienvenido a Administrador</h2>
-                        <p class="mb-5">Usted controla el sistema</p>                
-                        <a href="Calendario.html" class="btn btn-primary">Revisar Reportes</a>
+                    <section class="tm-content tm-about">
+                        <h2 class="mb-5 tm-content-title">Crear Tipo de Examen</h2>
+                        <hr class="mb-4">
+                        <div class="media my-3">
+                            <form id="citas" action="" method="POST">
+                                <div class="form-group mb-4">
+                                    <input type="text" name="nombre" class="form-control"  placeholder="Nombre" required="" />
+                                </div>
+                                <div class="form-group mb-4">
+                                    <input type="text" name="costo" class="form-control"  placeholder="Costo" required="" />
+                                </div>
+                                    <br>
+                                    <button type="submit" class="btn btn-outline-info" name="info_consulta">Crear Examen</button>
+                            </form>
+                                </div>
+                            </form>
+                        </div>                        
                     </section>
                 </main>
             </div>
@@ -76,10 +84,10 @@
             </div>        
             <div class="tm-col-right tm-col-footer">
                 <footer class="tm-site-footer text-right">
-                 
+                
                 </footer>
-            </div>  
-        </div>
+            </div>   
+        </div>        
 
         <!-- Diagonal background design -->
         <div class="tm-bg">
