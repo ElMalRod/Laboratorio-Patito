@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laboratorio Patito - Registro Empleado</title>
+    <title>Laboratorio-Patito Administrador-Crear</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
     <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+<!--
 
+TemplateMo 550 Diagoona
+
+https://templatemo.com/tm-550-diagoona
+
+-->
 </head>
-
 <body>
-    <div class="tm-container">        
+    <div class="tm-container">
         <div>
             <div class="tm-row pt-4">
                 <div class="tm-col-left">
                     <div class="tm-site-header media">
-                    
                         <div class="media-body">
                             <img src="img/LogoLabPatito.png" alt="Image" class="tm-service-img" width="300">
                         </div>        
@@ -49,7 +53,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link tm-nav-link" href="services.html">Usuarios</a>
                                 </li>
-                                <li class="nav-item">                                
                             </ul>                            
                         </div>                        
                     </nav>
@@ -57,54 +60,50 @@
             </div>
             
             <div class="tm-row">
-              <div class="tm-col-left"></div>
-                <main class="tm-col-right">
-                    <section class="tm-content tm-about">
-                        <h2 class="mb-5 tm-content-title">Ingresar Nuevo Empleado</h2>
-                        <hr class="mb-4">
-                        <div class="media my-3">
-                            <form id="citas" action="" method="POST">
-                                <div class="form-group mb-4">
-                                    <h3 class="form-control">Codigo</h3>
-                               <select name="codigo" class="form-control"   size="1"  >  
-                                   <option value="cod2" > Secretario </option>  
-                                   <option value="cod3"> Laboratorista </option>
-                                   <option value="cod1" > Administrador </option>  
-                                   <option value="cod4"> Otro </option>
-                                </select>  
-                                 </div>
-                                <div class="form-group mb-4">
-                                    <input type="text" name="nombre" class="form-control"  placeholder="Nombre" required="" />
-                                </div>
-                                <div class="form-group mb-4">
-                                    <input type="text" name="apellido" class="form-control"  placeholder="Apellido" required="" />
-                                </div>
-                                <div class="form-group mb-4">
-                                    <input type="text" name="dpi" class="form-control"  placeholder="DPI" required="" />
-                                </div>
-                                <div class="form-group mb-4">
-                                    <input type="text" name="telefono" class="form-control"  placeholder="Telefono" required="" />
-                                </div>
-                                    <br>
-                                    <br>
-                                <div class="form-group mb-4">
-                                     <input type="password" id="password" class="form-control"  placeholder="Crear Contraseña" required="" />
-                                </div>   
-                                <div class="form-group mb-4">
-                                    <input type="password" id="password1" class="form-control"  placeholder="Confirmar Contraseña" required="" />
-                               </div>    
-                                    <br>
-                                    <button type="submit" class="btn btn-outline-info" name="info_consulta">Crear</button>
-                            </form>
-                                  
-                                </div>
-                            </form>
-                        </div>                        
+                <div class="tm-col-left"></div>
+                <main class="tm-col-right tm-contact-main"> <!-- Content -->
+                    <section class="tm-content tm-contact">
+                        <h2 class="mb-4 tm-content-title">Ingresar Nuevo Empleado</h2>
+                        <p class="mb-85"></p>
                     </section>
+                    <div class="form-group">
+                        <form id="citas" action="" method="POST">
+                            <div class="form-group mb-4">
+                                <h3 class="form-control">Codigo</h3>
+                           <select name="codigo" class="form-control"   size="1"  >  
+                               <option value="cod2" > Secretario </option>  
+                               <option value="cod3"> Laboratorista </option>
+                               <option value="cod1" > Administrador </option>  
+                               <option value="cod4"> Otro </option>
+                            </select>  
+                             </div>
+                            <div class="form-group mb-4">
+                                <input type="text" name="nombre" class="form-control"  placeholder="Nombre" required="" />
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="text" name="apellido" class="form-control"  placeholder="Apellido" required="" />
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="text" name="dpi" class="form-control"  placeholder="DPI" required="" />
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="text" name="telefono" class="form-control"  placeholder="Telefono" required="" />
+                            </div>
+                                <br>
+                                <br>
+                            <div class="form-group mb-4">
+                                 <input type="password" id="password" class="form-control"  placeholder="Crear Contraseña" required="" />
+                            </div>   
+                            <div class="form-group mb-4">
+                                <input type="password" id="password1" class="form-control"  placeholder="Confirmar Contraseña" required="" />
+                           </div>    
+                                <br>
+                            <button type="submit" class="btn btn-outline-info" name="crear_empleado">Crear</button>
+                        </div>
                 </main>
             </div>
         </div>        
-
+        
         <div class="tm-row">
             <div class="tm-col-left text-center">            
                 <ul class="tm-bg-controls-wrapper">
@@ -115,13 +114,11 @@
             </div>        
             <div class="tm-col-right tm-col-footer">
                 <footer class="tm-site-footer text-right">
-                
                 </footer>
-            </div>   
-        </div>        
+            </div>  
+        </div>
 
-        <!-- Diagonal background design -->
-        <div class="tm-bg">
+        <div class="tm-bg"> <!-- Diagonal background design -->
             <div class="tm-bg-left"></div>
             <div class="tm-bg-right"></div>
         </div>
