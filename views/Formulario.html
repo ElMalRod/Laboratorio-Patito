@@ -58,8 +58,11 @@
                         <div class="media my-3">
                             <form id="citas" action="" method="POST">
                                 <div class="form-group mb-4">
-                                    <input type="text" name="CUI" class="form-control"  placeholder="CUI" required="" />
-                                </div>
+                                    <h3 class="form-control">CUI del paciente</h3>
+                               <select name="examen" class="form-control"   size="1"  >  
+                                   <option value="CUI" > </option>        
+                               </select>  
+                               </div>
                                 <div class="form-group mb-4">
                                     <input type="text" name="nombre" class="form-control"  placeholder="Nombre" required="" />
                                 </div>
@@ -67,18 +70,16 @@
                                     <input type="text" name="apellido" class="form-control"  placeholder="Apellido" required="" />
                                 </div>
                                 <div class="form-group mb-4">
-                                    <input type="text" name="departamento" class="form-control"  placeholder="Departamento" required="" />
+                                    <input type="text" name="sexo" class="form-control"  placeholder="Sexo" required="" />
                                 </div>
+                                <div class="form-group">
+                                    <h3 class="form-control">Fecha de nacimiento</h3>
+                                    <input type="date" name="fecha-nacimiento" />
+                                    <br>
+                                    <br>
                                 <div class="form-group mb-4">
                                     <input type="text" name="tipo_sangre" class="form-control"  placeholder="Tipo de Sangre" required="" />
                                 </div>
-                                <div class="form-group mb-4">
-                                    <h3 class="form-control">Sexo</h3>
-                               <select name="sexo" class="form-control"   size="1"  >  
-                                   <option value="male1" > Hombre </option>  
-                                   <option value="male2"> Mujer</option>
-                                </select>  
-                                 </div>
                                 <div class="form-group mb-4">
                                      <h3 class="form-control">Tipo de Examen</h3>
                                 <select name="examen" class="form-control"   size="1"  >  
@@ -99,9 +100,6 @@
                                     <br>
                                     <button type="submit" class="btn btn-outline-info" name="info_consulta">Emitir Examen</button>
                             </form>
-                               
-                                   
-                                    
                                 </div>
                             </form>
                         </div>                        
